@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
+    Hola Aqui podras calcular el factorial de un numero
     <script>
       // Hola, en esta actividad vamos a desarrollar un ejercicio en el que se aplicará el factorial de un número. 
 
@@ -17,8 +19,10 @@
           return n * factorial(n - 1);
         }
       }
-      for(let i = 0; i < 10; i++){
-        console.log(factorial(i));
+      let numero = prompt("Ingrese un numero");
+      for(let i = 0; i < numero; i++){
+        document.write(`<br>`);
+        document.write(`${i}! = ${factorial(i)} <br>`);
       }
 
     </script>
