@@ -8,22 +8,19 @@
   </head>
   <body>
     <script>
-      // Usa el switch para crear valores de programación aplicando libros o frutas.
+      // Hola, en esta actividad vamos a desarrollar un ejercicio en el que se aplicará el factorial de un número. 
 
-      let fruta = prompt("¿Cuál es tu fruta favorita?");
-        switch (fruta) {
-            case "manzana":
-            alert("¡Excelente elección!");
-            break;
-            case "naranja":
-            alert("¡Excelente elección!");
-            break;
-            case "pera":
-            alert("¡Excelente elección!");
-            break;
-            default:
-            alert("¡No es una fruta!");
+      function factorial(n) {
+        if (n === 0) {
+          return 1;
+        } else {
+          return n * factorial(n - 1);
         }
+      }
+      for(let i = 0; i < 10; i++){
+        console.log(factorial(i));
+      }
+
     </script>
   </body>
 </html>
